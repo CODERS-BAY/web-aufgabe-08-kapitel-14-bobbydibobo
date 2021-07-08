@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* #region Navbar */
+
+nav{
+    background-color: black;
+    padding: 2rem 0rem 0rem 0rem;
+    
+}
+
+nav h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+nav ul li{
+    display: inline;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul li:first-of-type{
+    padding-right: 3rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 1rem 2rem 1rem;
+    letter-spacing: .2rem;
+}
+
+nav ul li a:hover{
+    background-color: rgb(126, 126, 126);
+    transition-delay: .1s;
+    transition-duration: .5s;
+}
+
+.headerpic{
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.headerpic img{
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+nav .verticalbar {
+    position: relative;
+    left: 17rem;
+    bottom: 2.5rem;
+    border: 1px solid white;
+    width: 1px;
+    padding: 1rem 0rem 1rem 0rem;
+    background-color: white;
+}
+
+/* #endregion */
+
+
+/* #region Animations */
+
+article .bikinibottom {
+    height: 500px;
+    width: 760px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 2rem auto;
+    background-image: url(/img/bikinibottom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+article h1{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+    background-color: white;
+    color:black;
+}
+
+.animation p{
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif ;
+    text-align: center;
+    padding-top: .8rem;
+    background-color:black ;
+    color: white;
+}
+
+article h1:hover{
+    background-color: black;
+    color:white;
+    transition: ease-in .4s;
+}
+
+article .bikinibottom .spongebob img{
+    position: relative;
+    top: 22rem;
+    left: 40rem;
+}
+
+article .bikinibottom .spongebob img:hover{
+    transform: translateX(-55rem);
+    transition: linear 4s;
+}
+
+article .bikinibottom .tadeus img{
+    position: relative;
+    bottom: 6rem;
+    left: 30rem;
+}
+
+article .bikinibottom .tadeus img:hover{
+    transform: scale(5, 1.5) translateY(-20rem);
+    transition: linear 5s;
+}
+
+body{
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* #endregion */
+
+/* #region footer */
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    border-top: 2px solid white;
+}
+
+.socialmedia h6{
+    margin-top: 2rem;
+}
+
+.about, .socialmedia, .contact {
+    width: 33%;
+    text-align: center;
+}
+
+.verticalbarTwo {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: .5%;
+}
+
+.contact .contacttext{
+    background:black;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 1rem;
+    color: white;
+    margin: 2px 0;
+}
+
+.contacttext:hover{
+    box-shadow: 0 0 8px 0 white;
+}
+
+.contact input{
+    width: 50%;
+}
+
+.contact textarea{
+    width: 50%;
+}
+
+.fab{
+    color: white;
+    font-size: 3rem;
+}
+
+#fb:hover{
+    color: rgb(51, 51, 187);
+}
+
+#ig:hover{
+  color: rgb(231, 56, 193);
+}
+
+#tw:hover{
+    color: rgb(44, 176, 253);
+}
+
+#yt:hover{
+    color: rgb(255, 0, 0);
+}
+
+footer .socialmedia i {
+    margin: 2rem 1rem 0 1rem;
+}
+
+.about{
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+
+
+/* #endregion */
+
+/* #region float around */
+
+.schroedinger{
+    background-color: white;
+    height: 85vh;
+    margin: 1rem 0 1rem 0;
+    overflow: hidden;
+}
+
+.schroedinger img{
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    right: 7rem;
+    shape-outside: circle(44.97% at center center);
+}
+
+.beeware {
+    background-color: white;
+    height: 90vh;
+    margin: 1rem 0 1rem 0;
+    overflow: hidden;
+}
+
+.beeware img{
+    float: right;
+    position: relative;
+    shape-outside: polygon(50.22% -11px, 99.34% 8.6%, 79.84% 102.38%, 18.75% 102.37%, 10.22% 78.13%, 11.98% 53%, 21.24% 34.41%, 2.36% 21.3%, -6px 11.44%, 23.68% 7.34%);;
+}
+
+.mario {
+    background-color: white;
+    height: 90vh;
+    margin: 1rem 0 1rem 0;
+    overflow: hidden;
+}
+
+.mario img{
+    float: left;
+    position: relative;
+    margin-right: 1rem;
+}
